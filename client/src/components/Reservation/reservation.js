@@ -211,21 +211,14 @@ const AddReservation = () => {
                   )} */}
                 {/* </Container> */} 
 
-               <WeatherComponent/>
+               {/* <WeatherComponent/> */}
                 <Card
                   style={{
                     flexDirection: "column",
 
-                    alignItems: "center",
-                    color: "white",
-                    width: "50rem",
-                    marginLeft:"405px",
-                    height: "453px",
-                    // marginLeft: "25%",
-                    // marginTop: "150px",
-                    border:"12px",
+                  
                     backgroundColor: "#2B2E4A",
-                    marginTop:"-110px",
+                    marginTop:"-90px",
                   }}
                 >
                   <span
@@ -268,14 +261,14 @@ const AddReservation = () => {
                       </Card.Title>
                       <Card.Text>
                         <input
-                          // style={{ marginTop: "40px" }}
+                          style={{ cursor: "pointer" }}
                           type="date"
                           placeholder="returnDate"
                           onChange={(e) => setReturnDate(e.target.value)}
                         />
 
                         <input
-                          style={{ marginTop: "40px" }}
+                          style={{ marginTop: "40px" ,cursor: "pointer"}}
                           type="date"
                           placeholder="PickUpDate"
                           onChange={(e) => setPickUpDate(e.target.value)}
